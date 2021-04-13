@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
 
   onClickDelete(id: number) {
     this.customerService.delete(id).subscribe(
-      p => this.list$ = this.customerService.getAll(),
+      c => this.list$ = this.customerService.getAll(),
     );
   }
 
